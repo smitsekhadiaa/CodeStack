@@ -7,54 +7,82 @@ import dsa from './assets/dsa.png'
 import dbms from './assets/dbms.png'
 import Cprogg from "./Cprogg";
 // import { useHistory } from 'react-router-dom';
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 export default function Home(){
-    // let navigate = useNavigate(); 
-  const OpenCprogg = () =>{ 
-    // let path = `/cprogg`; 
-    // navigate(path);
-    <Cprogg/>
+
+    let navigate = useNavigate(); 
+
+  function OpenCprogg(){ 
+    let path = `/Cprogg`; 
+    navigate(path);
   }
+
+  function OpenCPPprogg(){ 
+    let path = `/CPPprogg`; 
+    navigate(path);
+    
+  }
+
+  function OpenJavaprogg(){ 
+    let path = `/Javaprogg`; 
+    navigate(path);
+    
+  }
+
+  function OpenPythonprogg(){ 
+    let path = `/Pythonprogg`; 
+    navigate(path);
+    
+  }
+
+  function OpenDSA(){ 
+    let path = `/DSA`; 
+    navigate(path);
+    
+  }
+ 
+  function OpenDbms(){ 
+    let path = `/Dbms`; 
+    navigate(path);
+    
+  }
+ 
+
     return(
   <div>
     <div class="card-deck">
   <div class="card c">
-      
-    <img src={c} class="images" alt="..."/>
+    <img src={c} class="images" alt="C-Programming"/>
     <div class="card-body">
       <h5 class="card-title">C Programming</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
     </div>
     <div class="card-footer">
     <button type="button" class="btn btn-info" onClick={OpenCprogg}>Discover Me</button>
-
-
     </div>
   </div>
 
 
   <div class="card cpp">
-    <img src={cpp} class="card-img-top" alt="..."/>
+    <img src={cpp} class="images" alt="C++ Programming"/>
     <div class="card-body">
       <h5 class="card-title">C++ Programming</h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
     </div>
     <div class="card-footer">
-    <button type="button" class="btn btn-info">Discover Me</button>
-
+    <button type="button" class="btn btn-info" onClick={OpenCPPprogg}>Discover Me</button>
     </div>
   </div>
 
 
   <div class="card java">
-    <img src={java} class="images" alt="..."/>
+    <img src={java} class="images" alt="Java"/>
     <div class="card-body">
       <h5 class="card-title">Java</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
     </div>
     <div class="card-footer">
-    <button type="button" class="btn btn-info">Discover Me</button>
-
+    <button type="button" class="btn btn-info" onClick={OpenJavaprogg}>Discover Me</button>
     </div>
   </div>
 </div>
@@ -62,41 +90,37 @@ export default function Home(){
 
 <div class="card-deck">
   <div class="card python">
-      
-    <img src={python} class="images" alt="..."/>
+    <img src={python} class="images" alt="Python"/>
     <div class="card-body">
       <h5 class="card-title">Python</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
     </div>
     <div class="card-footer">
-    <button type="button" class="btn btn-info">Discover Me</button>
-
+    <button type="button" class="btn btn-info" onClick={OpenPythonprogg}>Discover Me</button>
     </div>
   </div>
 
 
   <div class="card dsa">
-    <img src={dsa} class="images" alt="..."/>
+    <img src={dsa} class="images" alt="Dsa"/>
     <div class="card-body">
       <h5 class="card-title">Data Structures and Algorithms</h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
     </div>
     <div class="card-footer">
-    <button type="button" class="btn btn-info">Discover Me</button>
-
+    <button type="button" class="btn btn-info" onClick={OpenDSA}>Discover Me</button>
     </div>
   </div>
 
 
   <div class="card dbms">
-    <img src={dbms} class="images" alt="..."/>
+    <img src={dbms} class="images" alt="DBMS"/>
     <div class="card-body">
       <h5 class="card-title">Database Management System</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
     </div>
     <div class="card-footer">
-    <button type="button" class="btn btn-info">Discover Me</button>
-
+    <button type="button" class="btn btn-info" onClick={OpenDbms}>Discover Me</button>
     </div>
   </div>
 </div>

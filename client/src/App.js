@@ -3,6 +3,11 @@ import './App.css';
 import Header from './Header';
 import Home from './Home';
 import Cprogg from './Cprogg';
+import CPPprogg from './CPPprogg';
+import Javaprogg from './Javaprogg';
+import Pythonprogg from './Pythonprogg';
+import DSA from './DSA';
+import Dbms from './Dbms';
 import {
   BrowserRouter,
   Routes,
@@ -13,11 +18,15 @@ function App() {
   return (
     <div>
   <Header title="CodeStack"/>   
-  <Home/>  
   <BrowserRouter>
           <Routes>
             {<Route exact path="/" element={<Home />} />}
-            {<Route path="/cprogg" element={< Cprogg />} />}
+            {<Route path="/Cprogg" element={< Cprogg />} />}
+            {<Route path="/CPPprogg" element={< CPPprogg />} />}
+            {<Route path="/Javaprogg" element={< Javaprogg />} />}
+            {<Route path="/Pythonprogg" element={< Pythonprogg />} />}
+            {<Route path="/DSA" element={<DSA/>} />}
+            {<Route path="/DBMS" element={<Dbms/>} />}
           </Routes>
         
     
