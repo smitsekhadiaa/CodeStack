@@ -1,0 +1,47 @@
+body
+{
+  background-color: rgb(7, 6, 6);
+}
+
+.images{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  /* margin-left:200px; */
+  height:200px;
+  flex-wrap: wrap;
+}
+.c{
+  background-color: #FF9F45;
+  margin-left: 50px;
+}
+.cpp{
+  background-color: #ddff45;
+}
+.java
+{
+  background-color: #fa4eab;
+  margin-left: 50px;
+
+}
+.python
+{
+  background-color: #D3ECA7;
+}
+.dsa
+{
+  background-color: #C0D8C0;
+}
+.dbms
+{
+  background-color: #FFEEAD;
+}
+
+.card
+{
+  margin-top: 100px;
+}
+
+
