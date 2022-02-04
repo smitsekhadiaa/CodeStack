@@ -1,0 +1,26 @@
+.Harsh1{
+    display: flex;
+    flex-direction: row;
+    color:white
+}
+.Harsh2{
+    border:1px solid white;
+    width: 70%;
+    height:950px;
+
+}
+.Harsh3{
+    border:1px solid white;
+    width:30%;
+}
+.ScrollableDiv{
+    height: 830px;
+    overflow:hidden;
+    overflow-y: scroll;
+}
+.individualQuestion{
+    text-align: start;
+    padding-left: 20px;
+    margin:10px;
+    border:1px solid white;
+}
