@@ -35,10 +35,10 @@ io.on('connection',(socket)=>{
         })
     });
     socket.on("setAnswer",(data)=>{
-        Question.findOneAndUpdate({_id:data.Id},{
-            $push:{
-                Answers:data
-            }
+        Question.findById(data.Id).then((object)=>{
+            object.Answers.push(data);
+            console.log(object);
+            object.save();
         });
     });
 });

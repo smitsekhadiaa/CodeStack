@@ -26,7 +26,7 @@ function QuestionComp(props){
             <button onClick={seeAnswerFunction}>See Answers</button>
             <div>
                 {booleanAddAnswer && <AddAnswer data={object}/>}
-                {booleanSeeAnswer && <SeeAnswer/>}
+                {booleanSeeAnswer && <SeeAnswer data={object}/>}
             </div>
         </div>
     );
