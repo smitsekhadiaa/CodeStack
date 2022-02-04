@@ -16,3 +16,15 @@
 .DBMS{
     color:white;
 }
+
+/* CPROGG */
+.heading1{
+    margin-top: 10px;
+}
+.clist
+{
+    margin-right: 30px;
+}
+li {
+    opacity: 1.0;
+  }

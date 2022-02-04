@@ -9,13 +9,12 @@ body
   align-items: center;
   align-content: center;
   justify-content: center;
-  /* margin-left:200px; */
   height:200px;
   flex-wrap: wrap;
 }
 .c{
   background-color: #FF9F45;
-  margin-left: 50px;
+  
 }
 .cpp{
   background-color: #ddff45;
@@ -23,8 +22,6 @@ body
 .java
 {
   background-color: #fa4eab;
-  margin-left: 50px;
-
 }
 .python
 {
@@ -38,21 +35,21 @@ body
 {
   background-color: #FFEEAD;
 }
-
 .card
 {
   margin-top: 100px;
   margin-bottom: 100px;
   padding-bottom: 20px;
 }
+
+
+/* SCROLLBAR */
 html::-webkit-scrollbar {
   width: 10px; 
 }
-
 html::-webkit-scrollbar-track {
   background-color: black;
 }
-
 html::-webkit-scrollbar-thumb {
   background: #4e4e4e;
   border-radius: 25px;
@@ -60,11 +57,9 @@ html::-webkit-scrollbar-thumb {
 .fathersync::-webkit-scrollbar {
   width: 10px; 
 }
-
 .fathersync::-webkit-scrollbar-track {
   background-color: black;
 }
-
 .fathersync::-webkit-scrollbar-thumb {
   background: #4e4e4e;
   border-radius: 25px;
@@ -72,11 +67,9 @@ html::-webkit-scrollbar-thumb {
 .mothersync::-webkit-scrollbar {
   width: 10px; 
 }
-
 .mothersync::-webkit-scrollbar-track {
   background-color: black;
 }
-
 .mothersync::-webkit-scrollbar-thumb {
   background: #4e4e4e;
   border-radius: 25px;

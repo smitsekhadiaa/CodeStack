@@ -5,8 +5,6 @@ import java from './assets/java.png'
 import python from './assets/python.png'
 import dsa from './assets/dsa.png'
 import dbms from './assets/dbms.png'
-import Cprogg from "./Cprogg";
-// import { useHistory } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 export default function Home(){
 
@@ -124,9 +122,6 @@ export default function Home(){
     </div>
   </div>
 </div>
-
-
-
 </div>
     )
 }
