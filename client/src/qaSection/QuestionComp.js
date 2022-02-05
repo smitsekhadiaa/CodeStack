@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import { useState } from "react";
-=======
 import { useState} from "react";
->>>>>>> c90bd8a9db0fd4834beb48c037e0c4e7cfb52fad
 import AddAnswer from "./AddAnswer";
 import SeeAnswer from "./SeeAnswer";
 

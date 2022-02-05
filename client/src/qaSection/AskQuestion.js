@@ -1,22 +1,11 @@
-<<<<<<< HEAD
-import { useState } from "react";
-import io from 'socket.io-client';
-
-const socket=io.connect("http://localhost:3001");
-=======
 import { useState,useContext } from "react";
 import UserContext from '../usercontext';
->>>>>>> c90bd8a9db0fd4834beb48c037e0c4e7cfb52fad
 
 function AskQuestion(){
 
     let [questioner,setQuestioner]=useState("");
     let [question,setQuestion]=useState("");
-<<<<<<< HEAD
-
-=======
     const {socket} = useContext(UserContext);
->>>>>>> c90bd8a9db0fd4834beb48c037e0c4e7cfb52fad
     function uploadQuestion(event){
         event.preventDefault();
         if(questioner !== "" && question !== ""){
@@ -30,13 +19,8 @@ function AskQuestion(){
     }
 
     return (
-<<<<<<< HEAD
-        <div>
-            <div id="A">
-=======
         <div className="askques">
             <div id="A" >
->>>>>>> c90bd8a9db0fd4834beb48c037e0c4e7cfb52fad
                 <div id="B">
                     <form>
                         <h3>Upload a Question</h3>
@@ -65,8 +49,4 @@ function AskQuestion(){
     );
 }
 
-<<<<<<< HEAD
 export default AskQuestion;
-=======
-export default AskQuestion;
->>>>>>> c90bd8a9db0fd4834beb48c037e0c4e7cfb52fad

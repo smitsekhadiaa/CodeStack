@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-import logo from './logo.svg';
-import './App.css';
-import MainPage from './qaSection/MainPage';
-=======
->>>>>>> c90bd8a9db0fd4834beb48c037e0c4e7cfb52fad
 
 import './App.css';
 import Header from './Header';
@@ -37,10 +31,6 @@ function App() {
 
 
   return (
-<<<<<<< HEAD
-    <div className="App">
-      <MainPage/>
-=======
     <div>
     <Header title="CodeStack"/> 
     <BrowserRouter>
@@ -62,7 +52,6 @@ function App() {
           </Routes>
         </UserContext.Provider> : <div></div>}
     </BrowserRouter>
->>>>>>> c90bd8a9db0fd4834beb48c037e0c4e7cfb52fad
     </div>
   );
 }

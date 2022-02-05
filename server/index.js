@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const express=require('express');
 const http=require('http');
 const app=express();
@@ -23,42 +22,6 @@ const io=new Server(server,{
 })
 
 io.on('connection',(socket)=>{
-=======
-const express = require('express');
-const app = express();
-const cors = require('cors');
-const http = require('http');
-const { Server } = require('socket.io');
-const Question=require('./QAModel.js');
-const mongoose = require('mongoose');
-const SignUpObject = require('./Modals/SignUpModal');
-const { encrypt, decrypt } = require('./cryptionHandler');
-const { Encrypt, Decrypt } = require('./cryptionHandler1');
-const fetch = require('node-fetch');
-const WIKIPEDIA = require('wikipedia');
-const axios = require('axios');
-const solenolyrics = require("solenolyrics");
-const schedule = require('node-schedule');
-require('dotenv').config();
-const server = http.createServer(app);
-
-const io = new Server(server, {
-    cors: {
-        origin: "http://localhost:3000",
-        methods: ["GET", "POST"],
-    },
-});
-
-const url = process.env.MongoDB_Database_Url;
-mongoose.connect(url)
-    .then(() => {
-        console.log("Conneected.");
-    })
-
-io.on("connection", (socket) => {
-    console.log(`User Connected: ${socket.id}`);
-
->>>>>>> c90bd8a9db0fd4834beb48c037e0c4e7cfb52fad
     socket.on("askingQuestion",(object)=>{
         const Model=new Question({
             Questioner:object.Questioner,
@@ -78,14 +41,6 @@ io.on("connection", (socket) => {
             object.save();
         });
     });
-<<<<<<< HEAD
-});
-
-server.listen(3001,()=>{
-    console.log("Server currently running");
-})
-=======
-
     socket.on('signUpSubmit', (object) => {
         let Modal = new SignUpObject({
             Username: object.username,
@@ -154,4 +109,3 @@ server.listen(3001,()=>{
 server.listen(3001, () => {
     console.log("Server Running.");
 });
->>>>>>> c90bd8a9db0fd4834beb48c037e0c4e7cfb52fad

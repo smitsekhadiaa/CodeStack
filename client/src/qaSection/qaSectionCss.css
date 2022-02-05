@@ -1,20 +1,6 @@
 .Harsh1{
     display: flex;
     flex-direction: row;
-<<<<<<< HEAD
-}
-.Harsh2{
-    border:1px solid black;
-    width: 70%;
-    height:750px;
-}
-.Harsh3{
-    border:1px solid black;
-    width:30%;
-}
-.ScrollableDiv{
-    height: 620px;
-=======
     color:white;
 
 }
@@ -30,7 +16,6 @@
 }
 .ScrollableDiv{
     height: 830px;
->>>>>>> c90bd8a9db0fd4834beb48c037e0c4e7cfb52fad
     overflow:hidden;
     overflow-y: scroll;
 }
@@ -38,9 +23,6 @@
     text-align: start;
     padding-left: 20px;
     margin:10px;
-<<<<<<< HEAD
-    border:1px solid black;
-=======
     border:1px solid white;
 }
 
@@ -62,5 +44,4 @@
     background-color: rgba(0,0,0,0.1);
     
     
->>>>>>> c90bd8a9db0fd4834beb48c037e0c4e7cfb52fad
 }

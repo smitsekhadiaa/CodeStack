@@ -1,23 +1,12 @@
-<<<<<<< HEAD
-import { useState } from "react";
-import io from "socket.io-client";
-
-const socket=io.connect("http://localhost:3001");
-=======
 import { useState ,useContext} from "react";
 import UserContext from '../usercontext';
 
->>>>>>> c90bd8a9db0fd4834beb48c037e0c4e7cfb52fad
 
 function AddAnswer(props){
 
     const [answerer,setAnswerer]=useState("");
     const [answer,setAnswer]=useState("");
-<<<<<<< HEAD
-
-=======
     const {socket} = useContext(UserContext);
->>>>>>> c90bd8a9db0fd4834beb48c037e0c4e7cfb52fad
     function addAnswer(event){
         event.preventDefault();
         if(answerer!=="" && answer!==""){
