@@ -8,7 +8,13 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-history-router": "^1.4.1",
+    "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+<<<<<<< HEAD
+=======
+    "socket-io": "^1.0.0",
+>>>>>>> c90bd8a9db0fd4834beb48c037e0c4e7cfb52fad
     "socket.io-client": "^4.4.1",
     "web-vitals": "^2.1.4"
   },
