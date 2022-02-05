@@ -63,8 +63,8 @@ const Login = () => {
 
     return (
         !newUser ? (
-            <div>
-            <div class="container">
+            <div className="login">
+            <div class="container ">
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
 			<div class="card-header">

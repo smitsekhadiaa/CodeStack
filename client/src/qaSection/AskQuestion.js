@@ -19,8 +19,8 @@ function AskQuestion(){
     }
 
     return (
-        <div>
-            <div id="A">
+        <div className="askques">
+            <div id="A" >
                 <div id="B">
                     <form>
                         <h3>Upload a Question</h3>

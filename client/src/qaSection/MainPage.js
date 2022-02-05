@@ -6,7 +6,7 @@ import MainPage_01 from "./MainPage_01";
 
 function MainPage(props){
     return (
-        <div className="Harsh1">
+        <div className="Harsh1 main">
             <div className="Harsh2">
                 <MainPage_01/>
             </div>
