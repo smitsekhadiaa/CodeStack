@@ -1,0 +1,26 @@
+[
+    {
+        "heading":"C",
+        "link":"http://localhost:3000/Cprogg"
+    },
+    {
+        "heading":"Cpp",
+        "link":"http://localhost:3000/CPPprogg"
+    },
+    {
+        "heading":"Java",
+        "link":"http://localhost:3000/Javaprogg"
+    },
+    {
+        "heading":"Python",
+        "link":"http://localhost:3000/Pythonprogg"
+    },
+    {
+        "heading":"DSA",
+        "link":"http://localhost:3000/DSA"
+    },
+    {
+        "heading":"DBMS",
+        "link":"http://localhost:3000/DBMS"
+    }
+]

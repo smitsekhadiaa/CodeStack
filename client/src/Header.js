@@ -1,6 +1,11 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import JSONDATA from "./Search.json";
+import { useState } from 'react';
+
 export default function Header(props){
+
+let [searchTerm,setSearchTerm]=useState("");
+
 return (
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
   <a class="navbar-brand" href="/">CodeStack</a>
@@ -39,7 +44,29 @@ return (
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
+      <div style={{display:"flex",flexDirection:"column"}}>
+        <input class="form-control mr-sm-2" type="search" placeholder="Search"
+        onChange={(event)=>{setSearchTerm(event.target.value)}} aria-label="Search"></input>
+        <div style={{marginBottom:"-1px"}}>
+          {JSONDATA.filter((value)=>{
+            let t=value.heading.toLowerCase();
+            let u=searchTerm.toLowerCase()
+            if(value==""){
+              return value;
+            }
+            else if(t.includes(u)){
+              return value;
+            }
+          }).map((element)=>{
+            return (
+              searchTerm != ""?(
+              <div style={{width:"95%",backgroundColor:"white",borderRadius:"3px",padding:"5px",border:"1px solid grey",position:"relative"}}>
+                {element.heading}
+              </div>):(<div></div>)
+            );
+          })}
+        </div>
+      </div>
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
