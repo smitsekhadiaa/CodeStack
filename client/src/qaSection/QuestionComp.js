@@ -18,12 +18,14 @@ function QuestionComp(props){
 
     return (
         <div>
-            <h3>Questioner : {object.Questioner}</h3>
             <div>
                 <p>Question : {object.Question}</p>
             </div>
-            <button onClick={addAnswerFunction}>Add Answer</button>
-            <button onClick={seeAnswerFunction}>See Answers</button>
+            <div>
+            <h7>Question by~ {object.Questioner}</h7>
+            </div>
+            <button onClick={addAnswerFunction} className="addansbtn">Add Answer</button>
+            <button onClick={seeAnswerFunction} className="seeansbtn">See Answers</button>
             <div>
                 {booleanAddAnswer && <AddAnswer data={object}/>}
                 {booleanSeeAnswer && <SeeAnswer data={object}/>}

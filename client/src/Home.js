@@ -6,6 +6,7 @@ import python from './assets/python.png'
 import dsa from './assets/dsa.png'
 import dbms from './assets/dbms.png'
 import { useNavigate } from "react-router-dom";
+
 export default function Home(){
 
     let navigate = useNavigate(); 
@@ -47,9 +48,9 @@ export default function Home(){
  
 
     return(
-  <div>
+  <div style={{backgroundImage:"url(https://www.hdnicewallpapers.com/Walls/Big/3D/Dark_3D_HD_Wallpaper.jpg)" , backgroundSize:"cover",height:"100%"}}>
     <div class="card-deck">
-  <div class="card c">
+  <div class="card c" style={{flexBasis:"2"}}>
     <img src={c} class="images" alt="C-Programming"/>
     <div class="card-body">
       <h5 class="card-title">C Programming</h5>
@@ -61,7 +62,7 @@ export default function Home(){
   </div>
 
 
-  <div class="card cpp">
+  <div class="card cpp" style={{flexBasis:"1"}}>
     <img src={cpp} class="images" alt="C++ Programming"/>
     <div class="card-body">
       <h5 class="card-title">C++ Programming</h5>
