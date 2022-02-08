@@ -20,7 +20,7 @@ function MainPage_01(){
         <div>
             <h3>Question and answer section</h3>
             <section id="sync1">
-                <h4>Asked Questions - </h4>
+                <h4>Questions Asked - </h4>
                 <hr/>
                 <section className="ScrollableDiv">
                     <div>

@@ -26,12 +26,12 @@ const SignUp = (props) => {
         })
     }, [socket]);
     return (
-        <div>
+        <div className="signup">
         <div class="container">
         <div  class="d-flex justify-content-center h-100">
-            <div class="card">
+            <div class="card1">
                 <div class="card-header">
-                    <h3>Sign Up</h3>
+                    <h3 style={{color:"white"}}>Sign Up</h3>
                     <div class="d-flex justify-content-end social_icon">
                         <span><i class="fab fa-facebook-square"></i></span>
                         <span><i class="fab fa-google-plus-square"></i></span>
@@ -64,18 +64,22 @@ const SignUp = (props) => {
                         </div>
                         
                         <div class="form-group">
-                            <input type="submit" value="SignUp" class="btn float-right login_btn" onClick={formSubmit}/>
+                            <input type="submit" value="SignUp" class="btn btn-primary" style={{marginLeft:"40%",marginTop:"20px"}} onClick={formSubmit}/>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-    </div >
-          {!execute && <div class="status"><div  class="alert alert-success" role="alert">
+        <div style={{display:"flex",flexDirection:"row",justifyContent:"center"}}>
+            <div style={{display:"flex",flexDirection:"column"}}>
+            {!execute && <div class="status"><div  class="alert alert-success" role="alert">
           {submitted}
         </div>
         </div>}
+            </div>
         </div>
+    </div >
+    </div>
     );
 }
 export default SignUp

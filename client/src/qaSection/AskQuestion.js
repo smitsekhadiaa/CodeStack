@@ -21,7 +21,7 @@ function AskQuestion(){
     return (
         <div className="askques">
             <div id="A" >
-                <div id="B">
+                <div id="B" className="B">
                     <form>
                         <h3>Upload a Question</h3>
                         <hr/>
@@ -32,16 +32,22 @@ function AskQuestion(){
                         type="text" 
                         required
                         onChange={(e)=>{setQuestioner(e.target.value)}}
+                        className="questionerName"
+                        placeholder="Name"
                         />
                         <br/><br/>
+                        <div >
                         <label> Question : </label>
                         <br/>
                         <textarea 
                         required
                         onChange={(e)=>{setQuestion(e.target.value)}}
+                        placeholder="Ask Your Question..."
+                        className="askquestion"
                         ></textarea>
+                        </div>
                         <br/><br/>
-                        <button onClick={uploadQuestion}> Upload Question </button>
+                        <button onClick={uploadQuestion} className="uploadquesbtn"> Upload Question </button>
                     </form>
                 </div>
             </div>

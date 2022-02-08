@@ -1,12 +1,11 @@
-
-  
 function AnswerComp(props){
     return (
         <div>
-            <h4>Answer by - {props.data.Answerer}</h4>
             <div>
-                Answer - {props.data.Answer}
+                <h5>Answer - {props.data.Answer}</h5>
             </div>
+            <p>Answer by - {props.data.Answerer}</p>
+            
         </div>
     );
 }

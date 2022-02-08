@@ -1,8 +1,21 @@
+*::-webkit-scrollbar {
+  width: 10px; 
+}
+
+*::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 25px;
+}
 body
 {
   background-image: url("https://static.vecteezy.com/system/resources/previews/000/394/482/original/worldwide-connection-blue-background-illustration-vector.jpg");
   background-size: cover;
   height:100%;
+  font-family: sans-serif;
 }
 
 .images{
@@ -16,7 +29,7 @@ body
 }
 .c{
   background-color: #FF9F45;
-  
+
 }
 .cpp{
   background-color: #ddff45;
@@ -39,9 +52,28 @@ body
 }
 .card
 {
+  width:350px;
+  height:400px;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   padding-bottom: 20px;
+}
+.card2
+{
+  width:350px;
+  height:400px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  background-color: rgba(71, 68, 68,0.7);
+}
+.card1{
+  width:350px;
+  height:350px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  background-color: rgba(71, 68, 68,0.7);
 }
 
 
@@ -77,6 +109,28 @@ html::-webkit-scrollbar-thumb {
   border-radius: 25px;
 }
 
+
 .login{
-  background-image:"https://t4.ftcdn.net/jpg/01/19/11/55/360_F_119115529_mEnw3lGpLdlDkfLgRcVSbFRuVl6sMDty.jpg";
+  background-image:url("https://images.unsplash.com/photo-1537884944318-390069bb8665?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZGV8ZW58MHx8MHx8&w=1000&q=80");
+  background-size: cover;
+  height:100vh;
+  
+}
+.signup{
+  background-image:url("https://images.unsplash.com/photo-1537884944318-390069bb8665?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZGV8ZW58MHx8MHx8&w=1000&q=80");
+  background-size: cover;
+  height:100vh;
+}
+
+.cprogg{
+  text-decoration: wavy;
+  font-family: sans-serif;
+  color: #984efa;
+  background-color: black;
+  min-height: 100vh;
+}
+
+* a{
+  text-decoration: none;
+  color:black;
 }

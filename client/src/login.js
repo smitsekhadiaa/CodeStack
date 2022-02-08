@@ -23,7 +23,7 @@ const Login = () => {
     const [newPage, setNewPage] = useState(false);
     const [linker, setLinker] = useState(true);
     const { user, setuser } = useContext(UserContext);
-    const { deluxe, setDeluxe ,socket} = useContext(UserContext);
+    const { deluxe, setDeluxe, socket} = useContext(UserContext);
     const formSubmit = (e) => {
         e.preventDefault();
         const newEntry = {
@@ -38,6 +38,7 @@ const Login = () => {
                 setNewPage(true);
                 setStatus(data);
                 setDeluxe(newEntry);
+                setuser(username);
                 gotoHome();
             }
             else {
@@ -54,94 +55,86 @@ const Login = () => {
         setuser(true);
     }
 
-    let navigate = useNavigate(); 
+    let navigate = useNavigate();
 
-    function gotoHome(){ 
-      let path = `/`; 
-      navigate(path);
+    function gotoHome() {
+        let path = `/Home`;
+        navigate(path);
     }
 
     return (
+       
         !newUser ? (
             <div className="login">
-            <div class="container ">
-	<div class="d-flex justify-content-center h-100">
-		<div class="card">
-			<div class="card-header">
-				<h3>Sign In</h3>
-				<div class="d-flex justify-content-end social_icon">
-					<span><i class="fab fa-facebook-square"></i></span>
-					<span><i class="fab fa-google-plus-square"></i></span>
-					<span><i class="fab fa-twitter-square"></i></span>
-				</div>
-			</div>
-			<div class="card-body">
-            <form action="" onSubmit={formSubmit}>
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-user"></i></span>
-						</div>
-						<input type="text" class="form-control" placeholder="username" value={username}
-                        onChange={(e) => setUserame(e.target.value)} required
-                        />
-						
-					</div>
-                    <div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-user"></i></span>
-						</div>
-						<input type="text" class="form-control" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
-						
-					</div>
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-key"></i></span>
-						</div>
-						<input type="password" class="form-control" placeholder="password" value={password} onChange={(e) => setPassword(e.target.value)} required/>
-					</div>
-                    
-					<div class="form-group">
-						<input type="submit" value="Login" class="btn float-right login_btn" onClick={formSubmit}/>
-					</div>
-				</form>
-			</div>
-			<div class="card-footer">
-				<div class="d-flex justify-content-center links">
-					Don't have an account?<a href="http://localhost:3000/signup">Sign Up</a>
-				</div>
-				<div class="d-flex justify-content-center">
-					<a href="#">Forgot your password?</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div >
-{!linker && <div class="status"><div  class="alert alert-success" role="alert">
-  {status}
-  {/* {{status}==="Logged in successfully."?
-           ()=>{
-               gotoHome()
-           }
-  :<div></div>} */}
- 
+            <div >
+                <div class="container ">
+                    <div class="d-flex justify-content-center h-100">
+                        <div class="card2">
+                            <div class="card-header" >
+                                <h3 style={{color:"white"}}>Login</h3>
+                                <div class="d-flex justify-content-end social_icon">
+                                    <span><i class="fab fa-facebook-square"></i></span>
+                                    <span><i class="fab fa-google-plus-square"></i></span>
+                                    <span><i class="fab fa-twitter-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <form action="" onSubmit={formSubmit}>
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="username" value={username}
+                                            onChange={(e) => setUserame(e.target.value)} required
+                                        />
 
-</div></div>}
-{/* <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
-  <div class="d-flex">
-    <div class="toast-body">
-    {status}
-   </div>
-    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-  </div>
-</div> */}
-</div>
+                                    </div>
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
 
-            ) : (
+                                    </div>
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                        </div>
+                                        <input type="password" class="form-control" placeholder="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="submit" value="Login" class="btn btn-primary" style={{marginLeft:"40%"}} onClick={formSubmit} />
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-center links" style={{color:"white"}}>
+                                    Don't have an account?<a href="http://localhost:3000/signup" style={{fontWeight:"bold"}}>Sign Up</a>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" style={{fontWeight:"bold"}}>Forgot your password?</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div >
+                <div style={{display:"flex",flexDirection:"row",justifyContent:"center"}}>
+                    <div style={{display:"flex",flexDirection:"column"}}>
+                    {!linker && <div class="status"><div class="alert alert-success" role="alert">{status}</div></div>}
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        ) : (
             <div>
                 <SignUp />
             </div>
 
         )
+       
     );
     
 }
