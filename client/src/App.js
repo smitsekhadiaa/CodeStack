@@ -11,6 +11,7 @@ import Dbms from './Dbms';
 import './App.css';
 import Login from './login';
 import io from "socket.io-client";
+import AuthRequired from './AuthRequired';
 import { useEffect, useState } from 'react';
 // import HomeCarousel from "./HomeCarousel";
 import {
@@ -38,18 +39,18 @@ function App() {
       {(socket !== undefined) ?
 
 
-        <UserContext.Provider value={{ user, setuser, deluxe, setDeluxe, joinJoined, setJoinJoined, remJoinChat, socket, setRemJoinChat, messageList, setMessageList, color, setColor }}>
+        <UserContext.Provider value={{ user, setuser,deluxe, setDeluxe, joinJoined, setJoinJoined, remJoinChat, socket, setRemJoinChat, messageList, setMessageList, color, setColor }}>
           <Routes>
-            <Route path="/SignUp" element={<SignUp />} />
+            <Route exact path="/SignUp" element={<SignUp />} />
             <Route exact path="/" element={< Login />} />
-            <Route path="/qaSection" element={<MainPage />} />
-            {<Route exact path="/Home" element={<Home />} />}
-            {<Route path="/Cprogg" element={< Cprogg />} />}
-            {<Route path="/CPPprogg" element={< CPPprogg />} />}
-            {<Route path="/Javaprogg" element={< Javaprogg />} />}
-            {<Route path="/Pythonprogg" element={< Pythonprogg />} />}
-            {<Route path="/DSA" element={<DSA/>} />}
-            {<Route path="/DBMS" element={<Dbms/>} />}
+            <Route exact path="/qaSection" element={(<MainPage />)} />
+            <Route exact path="/Home" element={(<Home />)} />
+            <Route exact path="/Cprogg" element={(< Cprogg />)} />
+            <Route exact path="/CPPprogg" element={(< CPPprogg />)} />
+            <Route exact path="/Javaprogg" element={(< Javaprogg />)} />
+            <Route exact path="/Pythonprogg" element={(< Pythonprogg />)} />
+            <Route exact path="/DSA" element={(<DSA/>)} />
+            <Route exact path="/DBMS" element={(<Dbms/>)} />
             
           </Routes>
         </UserContext.Provider> : <div></div>}
