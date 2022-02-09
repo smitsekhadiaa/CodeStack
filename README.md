@@ -111,24 +111,24 @@ npm install
 npm start
 ```
 
+## 🖼 Screenshots
+![image](https://user-images.githubusercontent.com/84740927/153249904-1b7273fc-68b4-4cc8-83f2-d1963109fc96.png)
 
-<!-- ## 🖼 Screenshots
+![image](https://user-images.githubusercontent.com/84740927/153250049-5fb3d8da-30de-4dd0-a10b-77e7191d8cff.png)
 
-![WhatsApp Image 2022-01-20 at 1 18 39 PM](https://user-images.githubusercontent.com/84740927/150296409-1f502c9d-6378-4585-8142-87a4ac17ed06.jpeg)
+![image](https://user-images.githubusercontent.com/84740927/153250658-65e8bdb8-d4d5-4804-a1a9-833010b2f00a.png)
 
-![WhatsApp Image 2022-01-20 at 1 18 39 PM](https://user-images.githubusercontent.com/84740927/150296538-9e714695-5e77-45d1-b60b-be0b4d056d36.jpeg)
+![image](https://user-images.githubusercontent.com/84740927/153251037-a67c0c38-44d7-4772-a784-54c0c66d0b62.png)
 
-![image](https://user-images.githubusercontent.com/84740927/150296651-d99e0341-cd36-4d96-a9bb-90b970887a5f.png)
+![image](https://user-images.githubusercontent.com/84740927/153251271-b8dc9a7e-cf03-4ef4-a5d2-5cd883602864.png)
 
-![image](https://user-images.githubusercontent.com/84740927/150296769-f9c866c3-c151-4aa6-8105-cf7cadad3d3d.png)
+![image](https://user-images.githubusercontent.com/84740927/153252100-b1260dea-b8bd-420f-a2bb-685fe026fbcf.png)
 
-![image](https://user-images.githubusercontent.com/84740927/150296794-a10502f5-6f68-488e-9f0e-383b7b8ef0b2.png)
+![image](https://user-images.githubusercontent.com/84740927/153252326-f2ecdc48-9fb3-4fe8-91b1-d32623a32439.png)
 
-![image](https://user-images.githubusercontent.com/84740927/150296831-992cd43f-0a82-4dfe-9366-f1f12f151555.png) -->
-<!-- 
 ## Demo Video Drive Link
-https://drive.google.com/file/d/1NgQ4JyFTRaFYtzACkFk2x64H6GFTZxEt/view?usp=sharing
- -->
+
+
 
 ## Future Work
 
