@@ -1,7 +1,6 @@
 
 import './App.css';
-import Header from './Header';
-import Home from './Home';
+import Homepage from './Homepage';
 import Cprogg from './Cprogg';
 import CPPprogg from './CPPprogg';
 import Javaprogg from './Javaprogg';
@@ -21,7 +20,7 @@ import {
   Link
 } from "react-router-dom";
 import SignUp from './signup';
-import UserContext,{socket} from './usercontext';
+import UserContext, { socket } from './usercontext';
 import MainPage from './qaSection/MainPage';
 function App() {
   const [user, setuser] = useState(null);
@@ -33,27 +32,27 @@ function App() {
 
 
   return (
-    <div> 
-    <BrowserRouter>
-      {(socket !== undefined) ?
+    <div>
+      <BrowserRouter>
+        {(socket !== undefined) ?
 
 
-        <UserContext.Provider value={{ user, setuser,deluxe, setDeluxe, joinJoined, setJoinJoined, remJoinChat, socket, setRemJoinChat, messageList, setMessageList, color, setColor }}>
-          <Routes>
-            <Route exact path="/SignUp" element={<SignUp />} />
-            <Route exact path="/" element={< Login />} />
-            <Route exact path="/qaSection" element={(<MainPage />)} />
-            <Route exact path="/Home" element={(<Home />)} />
-            <Route exact path="/Cprogg" element={(< Cprogg />)} />
-            <Route exact path="/CPPprogg" element={(< CPPprogg />)} />
-            <Route exact path="/Javaprogg" element={(< Javaprogg />)} />
-            <Route exact path="/Pythonprogg" element={(< Pythonprogg />)} />
-            <Route exact path="/DSA" element={(<DSA/>)} />
-            <Route exact path="/DBMS" element={(<Dbms/>)} />
-            
-          </Routes>
-        </UserContext.Provider> : <div></div>}
-    </BrowserRouter>
+          <UserContext.Provider value={{ user, setuser, deluxe, setDeluxe, joinJoined, setJoinJoined, remJoinChat, socket, setRemJoinChat, messageList, setMessageList, color, setColor }}>
+            <Routes>
+              <Route exact path="/SignUp" element={<SignUp />} />
+              <Route exact path="/" element={< Login />} />
+              <Route exact path="/qaSection" element={(<MainPage />)} />
+              <Route exact path="/Home" element={(<Homepage />)} />
+              <Route exact path="/Cprogg" element={(< Cprogg />)} />
+              <Route exact path="/CPPprogg" element={(< CPPprogg />)} />
+              <Route exact path="/Javaprogg" element={(< Javaprogg />)} />
+              <Route exact path="/Pythonprogg" element={(< Pythonprogg />)} />
+              <Route exact path="/DSA" element={(<DSA />)} />
+              <Route exact path="/DBMS" element={(<Dbms />)} />
+
+            </Routes>
+          </UserContext.Provider> : <div></div>}
+      </BrowserRouter>
     </div>
   );
 }

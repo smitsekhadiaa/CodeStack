@@ -15,7 +15,7 @@ function CPPprogg() {
                     <h2 className="cproggtitle">C++ Programming Resources</h2>
 
                     <ul class="list-group clist">
-                        <li class="list-group-item list-group-item-success"><h4>Setting up Enviornment</h4>
+                        <li class="list-group-item list-group-item-success" style={{ marginRight: "0px", borderRadius: "5px", marginLeft: "20px" }}><h4>Setting up Enviornment</h4>
 
                             <ul>
                                 <li><h6>Visual Studio Code:</h6>
@@ -62,7 +62,7 @@ function CPPprogg() {
                             <br />
                         </li>
                         <br />
-                        <li class="list-group-item list-group-item-info"><h4>Basics of C++ Programming</h4>
+                        <li class="list-group-item list-group-item-info" style={{ marginRight: "0px", borderRadius: "5px", marginLeft: "20px" }}><h4>Basics of C++ Programming</h4>
                             <ul>
 
                                 <ol>
@@ -98,7 +98,7 @@ function CPPprogg() {
 
                         </li>
                         <br />
-                        <li class="list-group-item list-group-item-warning"><h4>Coding Platforms</h4>
+                        <li class="list-group-item list-group-item-warning" style={{ marginRight: "0px", borderRadius: "5px", marginLeft: "20px" }}><h4>Coding Platforms</h4>
 
                             <ul>
                                 <ol>

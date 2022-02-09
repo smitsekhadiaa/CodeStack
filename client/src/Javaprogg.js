@@ -14,7 +14,7 @@ function Javaprogg() {
                 <div class="container-fluid heading1">
                     <h2 className="cproggtitle" style={{ color: "white" }}>Java Programming Resources</h2>
                     <ul class="list-group clist">
-                        <li class="list-group-item list-group-item-success"><h4>Setting up Environment</h4>
+                        <li class="list-group-item list-group-item-success" style={{ marginRight: "0px", borderRadius: "5px", marginLeft: "20px" }}><h4>Setting up Environment</h4>
 
                             <ul>
                                 <li><h6>Eclipse:</h6>
@@ -61,7 +61,7 @@ function Javaprogg() {
                             <br />
                         </li>
                         <br />
-                        <li class="list-group-item list-group-item-info"><h4>Basics of Java Programming</h4>
+                        <li class="list-group-item list-group-item-info" style={{ marginRight: "0px", borderRadius: "5px", marginLeft: "20px" }}><h4>Basics of Java Programming</h4>
                             <ul>
 
                                 <ol>
@@ -100,7 +100,7 @@ function Javaprogg() {
 
                         </li>
                         <br />
-                        <li class="list-group-item list-group-item-warning"><h4>Coding Platforms</h4>
+                        <li class="list-group-item list-group-item-warning" style={{ marginRight: "0px", borderRadius: "5px", marginLeft: "20px" }}><h4>Coding Platforms</h4>
 
                             <ul>
                                 <ol>

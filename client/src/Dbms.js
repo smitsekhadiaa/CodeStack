@@ -17,7 +17,7 @@ function Dbms() {
                     <h2 className="cproggtitle" style={{ color: "white" }}>DBMS Resources</h2>
 
                     <ul class="list-group clist">
-                        <li class="list-group-item list-group-item-success"><h4>You can use any database,here we have provided link to maria DB</h4>
+                        <li class="list-group-item list-group-item-success" style={{ marginRight: "0px", borderRadius: "5px", marginLeft: "20px" }}><h4>You can use any database,here we have provided link to maria DB</h4>
 
                             <ul>
                                 <li><h6>Maria DB:</h6>
@@ -39,7 +39,7 @@ function Dbms() {
                             <br />
                         </li>
                         <br />
-                        <li class="list-group-item list-group-item-info"><h4>DBMS resources</h4>
+                        <li class="list-group-item list-group-item-info" style={{ marginRight: "0px", borderRadius: "5px", marginLeft: "20px" }}><h4>DBMS resources</h4>
                             <ul>
 
                                 <ol>
