@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const http = require('http');
-const { Server } = require('socket.io');
+const  socket = require('socket.io');
 const Question=require('./QAModel.js');
 const mongoose = require('mongoose');
 const SignUpObject = require('./Modals/SignUpModal');
@@ -14,9 +14,12 @@ const axios = require('axios');
 const solenolyrics = require("solenolyrics");
 const schedule = require('node-schedule');
 require('dotenv').config();
-const server = http.createServer(app);
-
-const io = new Server(server, {
+// const server = http.createServer(app);
+const PORT = process.env.PORT || 3001;
+const server = app.listen(PORT, () => {
+    console.log('App started at port');
+  })
+const io = socket(server, {
     cors: {
         origin: "http://localhost:3000",
         methods: ["GET", "POST"],
@@ -37,7 +40,7 @@ mongoose.connect(url)
           res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
         })
       }
-io.on("connection", (socket) => {
+io.socket.on("connection", (socket) => {
     console.log(`User Connected: ${socket.id}`);
 
     socket.on("askingQuestion",(object)=>{
@@ -132,6 +135,6 @@ io.on("connection", (socket) => {
         console.log("User Disconnected", socket.id);
     });
 });
-server.listen(3001, () => {
-    console.log("Server Running.");
-});
+// server.listen(PORT, () => {
+//     console.log("Server Running.");
+// });
