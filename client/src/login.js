@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react'
 import SignUp from './signup';
 import io from "socket.io-client";
-import { useNavigate } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import {
     BrowserRouter,
     Routes,
@@ -110,7 +110,7 @@ const Login = () => {
                                 </div>
                                 <div class="card-footer">
                                     <div class="d-flex justify-content-center links" style={{ color: "white" }}>
-                                        Don't have an account?<a href="/signup" style={{ fontWeight: "bold",color:"white" }}> Sign Up</a>
+                                        Don't have an account?<Link to="/signup" style={{ fontWeight: "bold",color:"white" }}> Sign Up</Link>
                                     </div>
                                 </div>
 
