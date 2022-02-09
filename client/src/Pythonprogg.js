@@ -26,12 +26,12 @@ function Pythonprogg() {
                                     <ol>
                                         <li>Documentation:
                                             <ul>
-                                                <li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-jupyter-notebook-for-python-3">Setting Up Jupyter Notebook</a></li>
+                                                <li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-jupyter-notebook-for-python-3" target="_blank">Setting Up Jupyter Notebook</a></li>
                                             </ul>
                                         </li>
                                         <li>Video:
                                             <ul>
-                                                <li><a href="https://youtu.be/AuTkAWEa06E">Video to Install Jupyter Notebook</a></li>
+                                                <li><a href="https://youtu.be/AuTkAWEa06E" target="_blank">Video to Install Jupyter Notebook</a></li>
                                             </ul>
                                         </li>
                                     </ol>
@@ -41,12 +41,12 @@ function Pythonprogg() {
                                     <ol>
                                         <li>Documentation:
                                             <ul>
-                                                <li><a href="https://code.visualstudio.com/docs">Setting Up VScode</a></li>
+                                                <li><a href="https://code.visualstudio.com/docs" target="_blank">Setting Up VScode</a></li>
                                             </ul>
                                         </li>
                                         <li>Videos:
                                             <ul>
-                                                <li><a href="https://youtu.be/ntLJmHOJ0ME">Video to Install Vscode</a></li>
+                                                <li><a href="https://youtu.be/ntLJmHOJ0ME" target="_blank">Video to Install Vscode</a></li>
                                             </ul>
                                         </li>
                                     </ol>
@@ -55,10 +55,10 @@ function Pythonprogg() {
                                 <li><h6>Online Python Compilers:</h6>
                                     <ol>
 
-                                        <li><a href="https://www.jdoodle.com/python3-programming-online/">JDoodle Python Compiler</a></li>
-                                        <li><a href="https://www.programiz.com/python-programming/online-compiler/">Programiz Python Compiler</a></li>
-                                        <li><a href="https://www.onlinegdb.com/online_python_compiler">Online GDB Compiler</a></li>
-                                        <li><a href="https://www.tutorialspoint.com/execute_python_online.php">Tutorialpoint Python Compiler</a></li>
+                                        <li><a href="https://www.jdoodle.com/python3-programming-online/" target="_blank">JDoodle Python Compiler</a></li>
+                                        <li><a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">Programiz Python Compiler</a></li>
+                                        <li><a href="https://www.onlinegdb.com/online_python_compiler" target="_blank">Online GDB Compiler</a></li>
+                                        <li><a href="https://www.tutorialspoint.com/execute_python_online.php" target="_blank">Tutorialpoint Python Compiler</a></li>
 
                                     </ol>
                                 </li>
@@ -72,28 +72,28 @@ function Pythonprogg() {
                                 <ol>
                                     <li>Documentation:
                                         <ul>
-                                            <li><a href="https://www.geeksforgeeks.org/python-programming-language/learn-python-tutorial/">GeeksforGeeks</a></li>
-                                            <li><a href="https://docs.python.org/3/tutorial/introduction.html">Python Tutorial for Beginners</a></li>
-                                            <li><a href="w3schools.com/python/">W3School</a></li>
+                                            <li><a href="https://www.geeksforgeeks.org/python-programming-language/learn-python-tutorial/" target="_blank">GeeksforGeeks</a></li>
+                                            <li><a href="https://docs.python.org/3/tutorial/introduction.html" target="_blank">Python Tutorial for Beginners</a></li>
+                                            <li><a href="w3schools.com/python/" target="_blank">W3School</a></li>
                                         </ul>
                                     </li>
                                     <li>Videos:
                                         <ul>
-                                            <li><a href="https://www.youtube.com/watch?v=gfDE2a7MKjA">Code with Harry Python Programming Playlist</a></li>
-                                            <li><a href="https://www.youtube.com/playlist?list=PLwgFb6VsUj_lQTpQKDtLXKXElQychT_2j">Python Programming for Beginners Playlist</a></li>
-                                            <li><a href="https://www.youtube.com/playlist?list=PLS1QulWo1RIaJECMeUT4LFwJ-ghgoSH6n">Python Programming Playlist</a></li>
-                                            <li><a href="https://www.youtube.com/playlist?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3">Telusko Python Programming Playlist</a></li>
+                                            <li><a href="https://www.youtube.com/watch?v=gfDE2a7MKjA" target="_blank">Code with Harry Python Programming Playlist</a></li>
+                                            <li><a href="https://www.youtube.com/playlist?list=PLwgFb6VsUj_lQTpQKDtLXKXElQychT_2j" target="_blank">Python Programming for Beginners Playlist</a></li>
+                                            <li><a href="https://www.youtube.com/playlist?list=PLS1QulWo1RIaJECMeUT4LFwJ-ghgoSH6n" target="_blank">Python Programming Playlist</a></li>
+                                            <li><a href="https://www.youtube.com/playlist?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3" target="_blank">Telusko Python Programming Playlist</a></li>
                                         </ul>
                                     </li>
                                     <li>Codes:
                                         <ul>
-                                            <li><a href="https://www.codewithharry.com/videos/python-tutorial-easy-for-beginners">Python Programming Codes</a></li>
+                                            <li><a href="https://www.codewithharry.com/videos/python-tutorial-easy-for-beginners" target="_blank">Python Programming Codes</a></li>
                                         </ul>
                                     </li>
                                     <li>Books:
                                         <ul>
-                                            <li><a href="https://drive.google.com/file/d/1imGJdpZHP4-j8FmFLr9Shwytenz9_P2i/view?usp=sharing">Beginning Programing with Python</a></li>
-                                            <li><a href="https://drive.google.com/file/d/1ReBTOwpoDln24174HmQ151X9-a3fizu4/view?usp=sharing">Python Notes For Professionals</a></li>
+                                            <li><a href="https://drive.google.com/file/d/1imGJdpZHP4-j8FmFLr9Shwytenz9_P2i/view?usp=sharing"target="_blank">Beginning Programing with Python</a></li>
+                                            <li><a href="https://drive.google.com/file/d/1ReBTOwpoDln24174HmQ151X9-a3fizu4/view?usp=sharing" target="_blank">Python Notes For Professionals</a></li>
 
                                         </ul>
                                     </li>
@@ -111,17 +111,17 @@ function Pythonprogg() {
                                 <ol>
                                     <li>Practice Coding:
                                         <ul>
-                                            <li><a href="https://www.hackerrank.com/domains/c">Hackerrank</a></li>
-                                            <li><a href="https://www.codechef.com/problems/school/?itm_medium=navmenu&itm_campaign=problems">CodeChef</a></li>
+                                            <li><a href="https://www.hackerrank.com/domains/c" target="_blank">Hackerrank</a></li>
+                                            <li><a href="https://www.codechef.com/problems/school/?itm_medium=navmenu&itm_campaign=problems" target="_blank">CodeChef</a></li>
                                         </ul>
                                     </li>
                                     <li>Competitive Coding:
                                         <ul>
-                                            <li><a href="https://www.hackerrank.com/">Hackerrank</a></li>
-                                            <li><a href="https://www.codechef.com/">CodeChef</a></li>
-                                            <li><a href="https://codeforces.com/">CodeForces</a></li>
-                                            <li><a href="https://atcoder.jp/">ATcoder</a></li>
-                                            <li><a href="https://leetcode.com/">Leetcode</a></li>
+                                            <li><a href="https://www.hackerrank.com/" target="_blank">Hackerrank</a></li>
+                                            <li><a href="https://www.codechef.com/" target="_blank">CodeChef</a></li>
+                                            <li><a href="https://codeforces.com/" target="_blank">CodeForces</a></li>
+                                            <li><a href="https://atcoder.jp/" target="_blank">ATcoder</a></li>
+                                            <li><a href="https://leetcode.com/" target="_blank">Leetcode</a></li>
                                         </ul>
                                     </li>
 

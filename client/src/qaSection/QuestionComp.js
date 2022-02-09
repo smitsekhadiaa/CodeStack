@@ -34,9 +34,9 @@ function QuestionComp(props){
             <button onClick={seeAnswerFunction} className="seeansbtn">See Answers</button>
             <div>
                 {booleanAddAnswer && <AddAnswer data={object}/>}
-                {booleanAddAnswer && <button onClick={closeAddAnswer}>Close</button>}
+                {booleanAddAnswer && <button btn className="btn btn-outline-danger" onClick={closeAddAnswer}>Close</button>}
                 {booleanSeeAnswer && <SeeAnswer data={object}/>}
-                {booleanSeeAnswer && <button onClick={closeSeeAnswer}>Close</button>}
+                {booleanSeeAnswer && <button className="btn btn-outline-danger" onClick={closeSeeAnswer}>Close</button>}
             </div>
         </div>
     );

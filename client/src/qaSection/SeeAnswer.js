@@ -5,7 +5,7 @@ function SeeAnswer(props){
     let arrayOfAnswers=props.data.Answers;
 
     return (
-        <div>
+        <div style={{paddingTop:"20px"}}>
             {arrayOfAnswers.map((element)=>{
                 return (
                     <div className="individualAnswer">

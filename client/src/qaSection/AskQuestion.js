@@ -37,7 +37,7 @@ function AskQuestion(){
                         <label>Questioner Name: </label>
                         <br/>
                         <input 
-                        style={{width:"97%",borderRadius:"5px"}}
+                        style={{width:"97%",borderRadius:"5px" ,color:"white"}}
                         type="text" 
                         required
                         onChange={(e)=>{setQuestioner(e.target.value)}}
@@ -49,7 +49,7 @@ function AskQuestion(){
                         <label> Question : </label>
                         <br/>
                         <textarea 
-                        style={{width:"97%",height:"250px",borderRadius:"5px"}}
+                        style={{width:"97%",height:"250px",borderRadius:"5px" , color:"white"}}
                         required
                         onChange={(e)=>{setQuestion(e.target.value)}}
                         placeholder="Ask Your Question..."

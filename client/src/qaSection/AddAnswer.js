@@ -32,9 +32,10 @@ function AddAnswer(props){
         <div>
             <div className="AddAnswerForm">
                 <form>
+                    <br/>
                     <label>Name of Answerer</label>
                     <br/>
-                    <br/>
+               
                     <input
                     style={{width:"97%"}}
                     type="text"
@@ -48,7 +49,7 @@ function AddAnswer(props){
                     <br/><br/>
                     <label>Add Valid Answer</label>
                     <br/>
-                    <br/>
+                   
                     <textarea
                     style={{width:"97%",height:"250px",borderRadius:"5px"}}
                     required
@@ -59,7 +60,7 @@ function AddAnswer(props){
                     }}
                     ></textarea>
                     <br/><br/>
-                    <button onClick={addAnswer}>Submit Answer</button>
+                    <button onClick={addAnswer} className="btn btn-outline-success">Submit Answer</button>
                     {(status!="")?(<p>{status}</p>):(<p></p>)}
                 </form>
             </div>

@@ -48,25 +48,28 @@ function Home1() {
 
     return (
         (user !== null) ? (
-            <div>
+            <div style={{backgroundImage:"url(https://i.ytimg.com/vi/8owr16eADe0/maxresdefault.jpg) " ,backgroundSize:"cover" , height:"100vh"}}>
                 <div style={{ display: "flex", flexDirection: "row", color: "white", backgroundColor: "#435A64", height: "65px" }}>
                     <div>
                         <img src="" />
                     </div>
                     <div>
-                        <p style={{ fontWeight: "bolder", color: "white", padding: "15px", fontSize: "30px" }}>CodeStack</p>
+                        <div style={{paddingTop:"17px"}}>
+                        <Link to="/Main" style={{ fontWeight: "bolder", color: "white", padding: "15px", fontSize: "25px",textDecoration:"none"}}>CodeStack</Link>
+                        </div>
+                        {/* <p style={{ fontWeight: "bolder", color: "white", padding: "15px",paddingTop:"18px", fontSize: "25px" }}>CodeStack</p> */}
                     </div>
-                    <div style={{ paddingTop: "19px", fontWeight: "5px", paddingRight: "10px" }}>
-                        <Link to="/Home" style={{ textDecoration: "none", fontWeight: "bold", color: "white", fontSize: "27px" }}>Home</Link>
+                    <div style={{ paddingTop: "22px", fontWeight: "5px", paddingRight: "10px" }}>
+                        <Link to="/Home" style={{ textDecoration: "none", fontWeight: "bold", color: "white", fontSize: "20px" }}>Home</Link>
                     </div>
                     <div>
                         <button style={{ height: "35px", backgroundColor: "transparent", paddingTop: "22px", border: "none", fontSize: "20px" }}>
-                            <Link to="/qaSection" style={{ textDecoration: "none", color: "white", fontSize: "25px" }}> Question-Answer Forum</Link>
+                            <Link to="/qaSection" style={{ textDecoration: "none", color: "white", fontSize: "20px" }}> Question-Answer Forum</Link>
                         </button>
                     </div>
                     <div>
                         <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={{ color: "white", paddingTop: "30px", backgroundColor: "transparent" }}>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={{ color: "white", paddingTop: "27px", backgroundColor: "transparent" }}>
                                 Language
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -135,7 +138,7 @@ function Home1() {
                         </div>
                         <div className="back">
                             <h2>DSA</h2>
-                            <p>Basics of DataStructures and Algorithms, playlist of videos, DSA450 questions with solutions,Competetvie Coding Websites</p>
+                            <p>Basics of DataStructures and Algorithms, playlist of videos, DSA450 questions with solutions,Competitive Coding Websites</p>
                             <button className="btn btn-info" onClick={OpenDSA}>Discover me</button>
                         </div>
                     </div>

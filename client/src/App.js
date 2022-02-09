@@ -8,6 +8,7 @@ import Pythonprogg from './Pythonprogg';
 import DSA from './DSA';
 import Dbms from './Dbms';
 import './App.css';
+import Main from './Main';
 import Login from './login';
 import io from "socket.io-client";
 import AuthRequired from './AuthRequired';
@@ -49,7 +50,7 @@ function App() {
               <Route exact path="/Pythonprogg" element={(< Pythonprogg />)} />
               <Route exact path="/DSA" element={(<DSA />)} />
               <Route exact path="/DBMS" element={(<Dbms />)} />
-
+              <Route exact path="/Main" element={(<Main />)} />
             </Routes>
           </UserContext.Provider> : <div></div>}
       </BrowserRouter>

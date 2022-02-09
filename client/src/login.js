@@ -110,10 +110,7 @@ const Login = () => {
                                 </div>
                                 <div class="card-footer">
                                     <div class="d-flex justify-content-center links" style={{ color: "white" }}>
-                                        Don't have an account?<a href="http://localhost:3000/signup" style={{ fontWeight: "bold" }}>Sign Up</a>
-                                    </div>
-                                    <div class="d-flex justify-content-center">
-                                        <a href="#" style={{ fontWeight: "bold" }}>Forgot your password?</a>
+                                        Don't have an account?<a href="http://localhost:3000/signup" style={{ fontWeight: "bold",color:"white" }}> Sign Up</a>
                                     </div>
                                 </div>
 
