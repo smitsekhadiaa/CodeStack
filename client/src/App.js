@@ -40,7 +40,7 @@ function App() {
 
           <UserContext.Provider value={{ user, setuser, deluxe, setDeluxe, joinJoined, setJoinJoined, remJoinChat, socket, setRemJoinChat, messageList, setMessageList, color, setColor }}>
             <Routes>
-              <Route exact path="/SignUp" element={<SignUp />} />
+              <Route exact path="/signup" element={<SignUp />} />
               <Route exact path="/" element={< Login />} />
               <Route exact path="/qaSection" element={(<MainPage />)} />
               <Route exact path="/Home" element={(<Homepage />)} />
