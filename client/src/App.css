@@ -1,8 +1,31 @@
+<<<<<<< HEAD
 body
 {
   background-color: rgb(7, 6, 6);
 }
 
+=======
+*::-webkit-scrollbar {
+  width: 10px; 
+}
+
+*::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 25px;
+}
+body
+{
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/394/482/original/worldwide-connection-blue-background-illustration-vector.jpg");
+  background-size: cover;
+  height:100%;
+  font-family: sans-serif;
+}
+
+>>>>>>> eaeb3d7c6634c6bcd60d0279d189eb846cdb1892
 .images{
   display:flex;
   flex-direction: row;
@@ -11,6 +34,7 @@ body
   justify-content: center;
   height:200px;
   flex-wrap: wrap;
+<<<<<<< HEAD
 }
 .c{
   background-color: #FF9F45;
@@ -59,6 +83,115 @@ html::-webkit-scrollbar-thumb {
 }
 .fathersync::-webkit-scrollbar-track {
   background-color: black;
+=======
+}
+.c{
+  background-color: #FF9F45;
+
+}
+.cpp{
+  background-color: #ddff45;
+}
+.java
+{
+  background-color: #fa4eab;
+}
+.python
+{
+  background-color: #D3ECA7;
+}
+.dsa
+{
+  background-color: #C0D8C0;
+}
+.dbms
+{
+  background-color: #FFEEAD;
+}
+.card
+{
+  width:350px;
+  height:400px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+.card2
+{
+  width:350px;
+  height:400px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  background-color: rgba(71, 68, 68,0.7);
+}
+.card1{
+  width:350px;
+  height:350px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  background-color: rgba(71, 68, 68,0.7);
+}
+
+
+/* SCROLLBAR */
+html::-webkit-scrollbar {
+  width: 10px; 
+}
+html::-webkit-scrollbar-track {
+  background-color: black;
+}
+html::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 25px;
+}
+.fathersync::-webkit-scrollbar {
+  width: 10px; 
+}
+.fathersync::-webkit-scrollbar-track {
+  background-color: black;
+}
+.fathersync::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 25px;
+}
+.mothersync::-webkit-scrollbar {
+  width: 10px; 
+}
+.mothersync::-webkit-scrollbar-track {
+  background-color: black;
+}
+.mothersync::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 25px;
+}
+
+
+.login{
+  background-image:url("https://images.unsplash.com/photo-1537884944318-390069bb8665?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZGV8ZW58MHx8MHx8&w=1000&q=80");
+  background-size: cover;
+  height:100vh;
+  
+}
+.signup{
+  background-image:url("https://images.unsplash.com/photo-1537884944318-390069bb8665?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZGV8ZW58MHx8MHx8&w=1000&q=80");
+  background-size: cover;
+  height:100vh;
+}
+
+.cprogg{
+  text-decoration: wavy;
+  font-family: sans-serif;
+  color: #984efa;
+  background-color: black;
+  min-height: 100vh;
+}
+
+* a{
+  text-decoration: none;
+  color:black;
+>>>>>>> eaeb3d7c6634c6bcd60d0279d189eb846cdb1892
 }
 .fathersync::-webkit-scrollbar-thumb {
   background: #4e4e4e;
