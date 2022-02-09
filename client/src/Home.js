@@ -52,14 +52,14 @@ export default function Home() {
 
 
   return (
-    (user !== null)?(
+    
     <div style={{ backgroundImage: "url(https://www.hdnicewallpapers.com/Walls/Big/3D/Dark_3D_HD_Wallpaper.jpg)", backgroundSize: "cover", height: "100%" }}>
       <div class="card-deck">
         <div class="card c" style={{ flexBasis: "2" }}>
           <img src={c} class="images" alt="C-Programming" />
           <div class="card-body">
             <h5 class="card-title">C Programming</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">Contains Setting up Environment, Basics of C, Codes for C and platforms to practise codes and devlope your coding skills!</p>
           </div>
           <div class="card-footer">
             <button type="button" class="btn btn-info" onClick={OpenCprogg}>Discover Me</button>
@@ -71,7 +71,7 @@ export default function Home() {
           <img src={cpp} class="images" alt="C++ Programming" />
           <div class="card-body">
             <h5 class="card-title">C++ Programming</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">Contains Setting up Environment, Basics of C++, Object Oriented Programming, Codes for C++ and platforms to practise codes and devlope your coding skills!</p>
           </div>
           <div class="card-footer">
             <button type="button" class="btn btn-info" onClick={OpenCPPprogg}>Discover Me</button>
@@ -83,7 +83,7 @@ export default function Home() {
           <img src={java} class="images" alt="Java" />
           <div class="card-body">
             <h5 class="card-title">Java</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text">Contains Setting up Environment, Basics of Java, Object Oriented Programming, Codes for Java and platforms to practise codes and devlope your coding skills!</p>
           </div>
           <div class="card-footer">
             <button type="button" class="btn btn-info" onClick={OpenJavaprogg}>Discover Me</button>
@@ -97,7 +97,7 @@ export default function Home() {
           <img src={python} class="images" alt="Python" />
           <div class="card-body">
             <h5 class="card-title">Python</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">Contains Setting up Environment, Basics of Python, Object Oriented Programming, Codes for Python and platforms to practise codes and develop your coding skills!</p>
           </div>
           <div class="card-footer">
             <button type="button" class="btn btn-info" onClick={OpenPythonprogg}>Discover Me</button>
@@ -128,8 +128,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>):(
-      <AuthRequired/>
-    )
+    </div>
+    
   )
 }

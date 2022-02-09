@@ -12,10 +12,10 @@ function Pythonprogg() {
     const { user, setuser } = useContext(UserContext);
 
     return (
-        (user!==null)?(
-        <div className="cprogg" style={{ paddingLeft: "25px" }}>
-            <div>
-                <h2 style={{ padding: "10px" }}>Python Programming Resources</h2>
+      
+        <div className="Cprogg">
+        <div class="container-fluid heading1">
+            <h2 className="cproggtitle" style={{color:"white"}}>Python Programming Resources</h2>
 
                 <ul class="list-group clist">
                     <li class="list-group-item list-group-item-success"><h4>Setting up Environment</h4>
@@ -64,7 +64,7 @@ function Pythonprogg() {
                         </ul>
                         <br />
                     </li>
-
+                    <br />
                     <li class="list-group-item list-group-item-info"><h4>Basics of Python Programming</h4>
                         <ul>
 
@@ -103,6 +103,7 @@ function Pythonprogg() {
                         </ul>
 
                     </li>
+                    <br />
                     <li class="list-group-item list-group-item-warning"><h4>Coding Platforms</h4>
 
                         <ul>
@@ -131,9 +132,7 @@ function Pythonprogg() {
                 </ul>
 
             </div>
-        </div>):(
-            <AuthRequired/>
-        )
+        </div>
     )
 }
 export default Pythonprogg;

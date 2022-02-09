@@ -9,7 +9,7 @@ function CPPprogg() {
     const { user, setuser } = useContext(UserContext);
 
     return (
-        (user!==null)?(
+       
         <div className="CPPprogg">
             <div class="container-fluid heading1">
                 <h2 className="cproggtitle">C++ Programming Resources</h2>
@@ -61,7 +61,7 @@ function CPPprogg() {
                         </ul>
                         <br />
                     </li>
-
+                    <br/>
                     <li class="list-group-item list-group-item-info"><h4>Basics of C++ Programming</h4>
                         <ul>
 
@@ -97,6 +97,7 @@ function CPPprogg() {
                         </ul>
 
                     </li>
+                    <br/>
                     <li class="list-group-item list-group-item-warning"><h4>Coding Platforms</h4>
 
                         <ul>
@@ -125,9 +126,7 @@ function CPPprogg() {
                 </ul>
 
             </div>
-        </div>):(
-            <AuthRequired/>
+        </div>
         )
-    )
 }
 export default CPPprogg;
