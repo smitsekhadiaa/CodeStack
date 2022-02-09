@@ -11,7 +11,7 @@ function MainPage(props){
     const { user, setuser } = useContext(UserContext);
 
     return (
-    
+    (user!==null)?(
         <div className="Harsh1 main">
             <div className="Harsh2">
                 <MainPage_01/>
@@ -19,7 +19,9 @@ function MainPage(props){
             <div className="Harsh3">
                 <AskQuestion/>
             </div>
-       </div>
+       </div>):(
+           <AuthRequired/>
+       )
     );
 }
 

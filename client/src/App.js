@@ -33,8 +33,7 @@ function App() {
 
 
   return (
-    <div>
-    <Header title="CodeStack"/> 
+    <div> 
     <BrowserRouter>
       {(socket !== undefined) ?
 
