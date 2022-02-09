@@ -1,4 +1,11 @@
 import React from "react";
+<<<<<<< HEAD
+function Dbms(){
+    return(
+        <div className="DBMS">
+            <h1>DBMS</h1>
+        </div>
+=======
 
 import UserContext from "./usercontext";
 import { useContext } from "react";
@@ -79,6 +86,7 @@ function Dbms() {
             </div>) : (
             <AuthRequired />
         )
+>>>>>>> eaeb3d7c6634c6bcd60d0279d189eb846cdb1892
     )
 }
 export default Dbms;

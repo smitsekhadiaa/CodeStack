@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+body
+{
+  background-color: rgb(7, 6, 6);
+}
+
+=======
 *::-webkit-scrollbar {
   width: 10px; 
 }
@@ -18,6 +25,7 @@ body
   font-family: sans-serif;
 }
 
+>>>>>>> eaeb3d7c6634c6bcd60d0279d189eb846cdb1892
 .images{
   display:flex;
   flex-direction: row;
@@ -26,6 +34,56 @@ body
   justify-content: center;
   height:200px;
   flex-wrap: wrap;
+<<<<<<< HEAD
+}
+.c{
+  background-color: #FF9F45;
+  
+}
+.cpp{
+  background-color: #ddff45;
+}
+.java
+{
+  background-color: #fa4eab;
+}
+.python
+{
+  background-color: #D3ECA7;
+}
+.dsa
+{
+  background-color: #C0D8C0;
+}
+.dbms
+{
+  background-color: #FFEEAD;
+}
+.card
+{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-bottom: 20px;
+}
+
+
+/* SCROLLBAR */
+html::-webkit-scrollbar {
+  width: 10px; 
+}
+html::-webkit-scrollbar-track {
+  background-color: black;
+}
+html::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 25px;
+}
+.fathersync::-webkit-scrollbar {
+  width: 10px; 
+}
+.fathersync::-webkit-scrollbar-track {
+  background-color: black;
+=======
 }
 .c{
   background-color: #FF9F45;
@@ -133,4 +191,20 @@ html::-webkit-scrollbar-thumb {
 * a{
   text-decoration: none;
   color:black;
+>>>>>>> eaeb3d7c6634c6bcd60d0279d189eb846cdb1892
 }
+.fathersync::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 25px;
+}
+.mothersync::-webkit-scrollbar {
+  width: 10px; 
+}
+.mothersync::-webkit-scrollbar-track {
+  background-color: black;
+}
+.mothersync::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 25px;
+}
+
