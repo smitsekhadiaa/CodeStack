@@ -40,7 +40,7 @@ mongoose.connect(url)
           res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
         })
       }
-io.socket.on("connection", (socket) => {
+io.sockets.on("connection", (socket) => {
     console.log(`User Connected: ${socket.id}`);
 
     socket.on("askingQuestion",(object)=>{
