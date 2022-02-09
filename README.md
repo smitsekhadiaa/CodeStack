@@ -134,4 +134,5 @@ https://drive.google.com/file/d/1NgQ4JyFTRaFYtzACkFk2x64H6GFTZxEt/view?usp=shari
 
 - [ ] Add resources of various Domains like Web-Devlopment,App Devlopment,Machine Learning and Deep Learning.
 - [ ] The User Interface can be made more user friendly though we have tried to create an execellent UI as per our imagination.
-
+- [ ] We can use cookies for authentication of pages.
+- [ ] We can implement the progress report of a student which he/she practices in the given time.
