@@ -1,15 +1,21 @@
-const express=require('express');
-const http=require('http');
-const app=express();
-const cors=require('cors');
-const { Server }=require('socket.io');
-const Question=require('./QAModel.js');
-const mongoose= require('mongoose');
-const { findById } = require('./QAModel.js');
-app.use(cors());
-require('dotenv').config();
 
-const server=http.createServer(app);
+const express = require('express');
+const app = express();
+const cors = require('cors');
+const http = require('http');
+const { Server } = require('socket.io');
+const Question=require('./QAModel.js');
+const mongoose = require('mongoose');
+const SignUpObject = require('./Modals/SignUpModal');
+const { encrypt, decrypt } = require('./cryptionHandler');
+const { Encrypt, Decrypt } = require('./cryptionHandler1');
+const fetch = require('node-fetch');
+const WIKIPEDIA = require('wikipedia');
+const axios = require('axios');
+const solenolyrics = require("solenolyrics");
+const schedule = require('node-schedule');
+require('dotenv').config();
+const server = http.createServer(app);
 
 const mongoUrl=process.env.MongoDB_Database_URL;
 mongoose.connect(mongoUrl);
@@ -102,9 +108,9 @@ io.on('connection',(socket)=>{
             })
     }
     )
-    socket.on("disconnect", () => {
-        console.log("User Disconnected", socket.id);
-    });
+    //socket.on("disconnect", () => {
+    //    console.log("User Disconnected", socket.id);
+    //});
 });
 server.listen(3001, () => {
     console.log("Server Running.");

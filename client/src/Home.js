@@ -36,6 +36,7 @@ export default function Home() {
     let path = `/Pythonprogg`;
     navigate(path);
 
+    
   }
 
   function OpenDSA() {
