@@ -37,13 +37,13 @@ function DSA() {
                             <p><a href="https://github.com/Jigsaw-23122002/450-DSA-NOTES">DSA Programs Written By Harsh </a></p>
                         </div>
                         <div class="alert alert-success" role="alert">
-                            <h4 class="alert-heading">DSA Programs For Dsa 450</h4>
-                            <p><a href="https://github.com/Jigsaw-23122002/450-DSA-NOTES">DSA Programs Written By Harsh </a></p>
+                            <h4 class="alert-heading">DSA 450</h4>
+                            <p><a href="https://github.com/Jigsaw-23122002/450-DSA-NOTES">DSA Programs Written By Harsh,Neel,Smit & Dhruv</a></p>
                         </div>
                         <div>
                         </div>
                         <div class="alert alert-success" role="alert">
-                            <h4 class="alert-heading">INTERVIEW EXPERIENCES</h4>
+                            <h4 class="alert-heading">Interview Expirience</h4>
                             <p><a href="https://drive.google.com/drive/folders/1BCKFtr9FWDI0iJ74bTYJdsYS74uKBq98?usp=sharing">Intership,Placements and interview experiences of seniors at VJTI </a></p>
                         </div>
                     </div>

@@ -19,6 +19,10 @@ function AddAnswer(props){
         }
     }
 
+    function closeADD(){
+        props.datas.setBooleanAddAnswer(false);
+    }
+
     return(
         <div>
             <div className="AddAnswerForm">
@@ -49,6 +53,7 @@ function AddAnswer(props){
                     ></textarea>
                     <br/><br/>
                     <button onClick={addAnswer}>Submit Answer</button>
+                    <button onClick={closeADD}>Close</button>
                 </form>
             </div>
         </div>

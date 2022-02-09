@@ -10,11 +10,12 @@ function MainPage_01(){
     const {socket} = useContext(UserContext);
     useEffect(()=>{
         socket.emit("getQuestions");
+        socket.on("QuestionAdded");
         socket.on("takeQuestions",(data)=>{
             console.log(data);
             setQuestionList(data);
         })
-    },[]);
+    },[questionList,socket]);
 
     return (
         <div>

@@ -135,7 +135,7 @@ function Home1() {
                         </div>
                         <div className="back">
                             <h2>DSA</h2>
-                            <p>Basics of DataStructures and Algorithms</p>
+                            <p>Basics of DataStructures and Algorithms, playlist of videos, DSA450 questions with solutions,Competetvie Coding Websites</p>
                             <button className="btn btn-info" onClick={OpenDSA}>Discover me</button>
                         </div>
                     </div>
@@ -145,7 +145,7 @@ function Home1() {
                         </div>
                         <div className="back">
                             <h2>DBMS</h2>
-                            <p>Setting up MariaDB, Basics of DBMS, SQL.</p>
+                            <p>Complete Setting up MariaDB, resources and playlists of Data Base Management System and Structured Query Language (SQL).</p>
                             <button className="btn btn-info" onClick={OpenDbms}>Discover me</button>
                         </div>
                     </div>

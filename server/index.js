@@ -33,11 +33,15 @@ io.on("connection", (socket) => {
     console.log(`User Connected: ${socket.id}`);
 
     socket.on("askingQuestion",(object)=>{
+        console.log(object);
         const Model=new Question({
             Questioner:object.Questioner,
             Question:object.Question
         })
         Model.save();
+        Question.find().then((data)=>{
+            socket.emit("takeQuestions",data);
+        })
     });
     socket.on("getQuestions",()=>{
         Question.find().then((data)=>{
