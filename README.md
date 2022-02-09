@@ -127,12 +127,12 @@ npm start
 ![image](https://user-images.githubusercontent.com/84740927/153252326-f2ecdc48-9fb3-4fe8-91b1-d32623a32439.png)
 
 ## Demo Video Drive Link
+https://drive.google.com/file/d/1-tFXRdGHm3O6Oti7O3KMo_L8TkDaRNG3/view?usp=sharing
+
+##Demo Video YouTube Link
+https://youtu.be/BHlz8hOwLwg
 
 
-
-## Our Deployed Website
-
-https://codestack.herokuapp.com/
 
 ## Future Work
 
