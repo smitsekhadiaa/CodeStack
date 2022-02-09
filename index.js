@@ -23,12 +23,20 @@ const io = new Server(server, {
     },
 });
 
+
 const url = process.env.MongoDB_Database_Url;
 mongoose.connect(url)
     .then(() => {
-        console.log("Conneected.");
+        console.log("Connected.");
     })
 
+    if(process.env.NODE_ENV=== 'production'){
+        app.use(express.static('client/build'));
+      
+        app.get('*', (req, res) => {
+          res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+        })
+      }
 io.on("connection", (socket) => {
     console.log(`User Connected: ${socket.id}`);
 
