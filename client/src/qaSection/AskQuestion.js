@@ -1,7 +1,15 @@
-import { useState,useContext } from "react";
+import { useState,useContext, useEffect } from "react";
 import UserContext from '../usercontext';
 
 function AskQuestion(){
+
+    let [status,setStatus]=useState("");
+    useEffect(()=>{
+        socket.on("AddedAskedQuestion",(data)=>{
+            console.log(data);
+            setStatus(data);
+        })
+    })
 
     let [questioner,setQuestioner]=useState("");
     let [question,setQuestion]=useState("");
@@ -29,6 +37,7 @@ function AskQuestion(){
                         <label>Questioner Name: </label>
                         <br/>
                         <input 
+                        style={{width:"97%",borderRadius:"5px"}}
                         type="text" 
                         required
                         onChange={(e)=>{setQuestioner(e.target.value)}}
@@ -40,6 +49,7 @@ function AskQuestion(){
                         <label> Question : </label>
                         <br/>
                         <textarea 
+                        style={{width:"97%",height:"250px",borderRadius:"5px"}}
                         required
                         onChange={(e)=>{setQuestion(e.target.value)}}
                         placeholder="Ask Your Question..."
@@ -48,6 +58,7 @@ function AskQuestion(){
                         </div>
                         <br/><br/>
                         <button onClick={uploadQuestion} className="uploadquesbtn"> Upload Question </button>
+                        {(status!=="")?(<p>{status}</p>):(<p></p>)}
                     </form>
                 </div>
             </div>

@@ -41,6 +41,7 @@ io.on("connection", (socket) => {
         Model.save();
         Question.find().then((data)=>{
             socket.emit("takeQuestions",data);
+            socket.emit("AddedAskedQuestion","Added Question Successfully.");
         })
     });
     socket.on("getQuestions",()=>{
@@ -53,6 +54,8 @@ io.on("connection", (socket) => {
             object.Answers.push(data);
             console.log(object);
             object.save();
+            let status="Added Answer successfully.";
+            socket.emit("addedAnswerStatus",status);
         });
     });
 
