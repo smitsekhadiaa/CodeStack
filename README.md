@@ -14,6 +14,9 @@
   
 </div>
 
+## Abstract Submission:
+
+https://docs.google.com/document/d/1HNtASCknbyR1mjJ3jDJmaeXiFqNOJO9_Tn4aty4xb74/edit?usp=sharing
 
 ## Website Link:
 https://codestack.herokuapp.com/
