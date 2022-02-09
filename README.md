@@ -35,7 +35,7 @@ https://sociablast.herokuapp.com/
 ## 👨‍🏫 Mentors
 
 - **Harsh Goel**
-- **Bhoomika **
+- **Bhoomika**
 - **Aparna Naik**
 
 
