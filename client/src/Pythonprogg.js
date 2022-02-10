@@ -1,11 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
-function Pythonprogg(){
-    return(
-        <div className="Pythonprogg">
-            <h1>Pythonprogg</h1>
-        </div>
-=======
 import UserContext from "./usercontext";
 import { useContext } from "react";
 import AuthRequired from "./AuthRequired";
@@ -143,7 +136,6 @@ function Pythonprogg() {
             </div>) : (
             <AuthRequired />
         )
->>>>>>> eaeb3d7c6634c6bcd60d0279d189eb846cdb1892
     )
 }
 export default Pythonprogg;

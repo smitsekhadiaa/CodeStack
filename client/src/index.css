@@ -15,21 +15,6 @@
 }
 .DBMS{
     color:white;
-<<<<<<< HEAD
-}
-
-/* CPROGG */
-.heading1{
-    margin-top: 10px;
-}
-.clist
-{
-    margin-right: 30px;
-}
-li {
-    opacity: 1.0;
-  }
-=======
 }
 
 /* CPROGG */
@@ -151,4 +136,3 @@ margin-left: 4px;
     flex-direction:"row";
     justify-content: "center";
 } */
->>>>>>> eaeb3d7c6634c6bcd60d0279d189eb846cdb1892

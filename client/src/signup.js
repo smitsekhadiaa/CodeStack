@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react'
 import io from "socket.io-client";
 import UserContext from "./usercontext";
-
+import { useNavigate } from 'react-router-dom'
 const SignUp = (props) => {
     const [username, setUserame] = useState("");
     const [email, setEmail] = useState("");
@@ -10,6 +10,7 @@ const SignUp = (props) => {
     const [submitted, setSubmitted] = useState("");
     const [execute, setexecute] = useState(true);
     const { socket } = useContext(UserContext);
+
     const formSubmit = (e) => {
         e.preventDefault();
         const newEntry = {
@@ -17,14 +18,25 @@ const SignUp = (props) => {
             password: password,
             username: username
         }
+
+       
         socket.emit("signUpSubmit", newEntry);
     }
     useEffect(() => {
         socket.on("signupsubmit", (data) => {
+            if(data==='User registered Successfully.')
+            {
+                OpenLogin();
+            }
             setSubmitted(data)
             setexecute(false);
         })
     }, [socket]);
+    let navigate = useNavigate();
+    function OpenLogin() {
+        let path = `/`;
+        navigate(path);
+    }
     return (
         <div className="signup">
             <div class="container">

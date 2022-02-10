@@ -1,19 +1,12 @@
 
 import './App.css';
-<<<<<<< HEAD
-import Header from './Header';
-import Home from './Home';
-=======
 import Homepage from './Homepage';
->>>>>>> eaeb3d7c6634c6bcd60d0279d189eb846cdb1892
 import Cprogg from './Cprogg';
 import CPPprogg from './CPPprogg';
 import Javaprogg from './Javaprogg';
 import Pythonprogg from './Pythonprogg';
 import DSA from './DSA';
 import Dbms from './Dbms';
-<<<<<<< HEAD
-=======
 import './App.css';
 import Main from './Main';
 import Login from './login';
@@ -21,19 +14,15 @@ import io from "socket.io-client";
 import AuthRequired from './AuthRequired';
 import { useEffect, useState } from 'react';
 // import HomeCarousel from "./HomeCarousel";
->>>>>>> eaeb3d7c6634c6bcd60d0279d189eb846cdb1892
 import {
   BrowserRouter,
   Routes,
   Route,
   Link
 } from "react-router-dom";
-<<<<<<< HEAD
-=======
 import SignUp from './signup';
 import UserContext, { socket } from './usercontext';
 import MainPage from './qaSection/MainPage';
->>>>>>> eaeb3d7c6634c6bcd60d0279d189eb846cdb1892
 function App() {
   const [user, setuser] = useState(null);
   const [deluxe, setDeluxe] = useState({});
@@ -45,22 +34,6 @@ function App() {
 
   return (
     <div>
-<<<<<<< HEAD
-  <Header title="CodeStack"/>   
-  <BrowserRouter>
-          <Routes>
-            {<Route exact path="/" element={<Home />} />}
-            {<Route path="/Cprogg" element={< Cprogg />} />}
-            {<Route path="/CPPprogg" element={< CPPprogg />} />}
-            {<Route path="/Javaprogg" element={< Javaprogg />} />}
-            {<Route path="/Pythonprogg" element={< Pythonprogg />} />}
-            {<Route path="/DSA" element={<DSA/>} />}
-            {<Route path="/DBMS" element={<Dbms/>} />}
-          </Routes>
-        
-    
-    </BrowserRouter>
-=======
       <BrowserRouter>
         {(socket !== undefined) ?
 
@@ -81,7 +54,6 @@ function App() {
             </Routes>
           </UserContext.Provider> : <div></div>}
       </BrowserRouter>
->>>>>>> eaeb3d7c6634c6bcd60d0279d189eb846cdb1892
     </div>
   );
 }
