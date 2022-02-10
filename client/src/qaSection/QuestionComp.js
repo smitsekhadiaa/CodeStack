@@ -15,6 +15,12 @@ function QuestionComp(props){
         setBooleanAddAnswer(false);
         setBooleanSeeAnswer(true);
     }
+    function closeAddAnswer(){
+        setBooleanAddAnswer(false);
+    }
+    function closeSeeAnswer(){
+        setBooleanSeeAnswer(false);
+    }
 
     return (
         <div>
@@ -28,7 +34,9 @@ function QuestionComp(props){
             <button onClick={seeAnswerFunction} className="seeansbtn">See Answers</button>
             <div>
                 {booleanAddAnswer && <AddAnswer data={object}/>}
+                {booleanAddAnswer && <button btn className="btn btn-outline-danger" onClick={closeAddAnswer}>Close</button>}
                 {booleanSeeAnswer && <SeeAnswer data={object}/>}
+                {booleanSeeAnswer && <button className="btn btn-outline-danger" onClick={closeSeeAnswer}>Close</button>}
             </div>
         </div>
     );

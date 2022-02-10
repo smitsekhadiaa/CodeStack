@@ -22,11 +22,12 @@ html {
 }
 
 body{
-  background-image: url('https://assets.codepen.io/1538474/star.svg'),linear-gradient(to bottom, #05007A, #4D007D);
+  background-image: url('http://www.pixelstalk.net/wp-content/uploads/2016/04/Stars-wallpaper-HD-desktop.jpg'),linear-gradient(to bottom, #05007A, #4D007D);
   height: 100%;
   margin: 0;
   background-attachment: fixed;
-  overflow: hidden;
+  overflow:hidden;
+  overflow-y:scroll;
 }
 
 .mars{
@@ -79,17 +80,19 @@ body{
   text-align: center;
   font-size: 3.5vmin;
   margin-top: -1vmin;
-  margin-bottom: 9vmin;
+  margin-bottom: 4vmin;
 }
 
 .btn-back{
   border: 1px solid white;
   color: white;
-  height: 5vmin;
+  // height: 5vmin;
   padding: 12px;
   font-family: $nunito-font;
   text-decoration: none;
-	border-radius: 5px;
+	border-radius: 7px;
+  margin-bottom: 900px;
+  
 
   &:hover{
     background: white;

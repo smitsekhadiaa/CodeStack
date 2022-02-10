@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const http = require('http');
-const { Server } = require('socket.io');
+const  socket = require('socket.io');
 const Question=require('./QAModel.js');
 const mongoose = require('mongoose');
 const SignUpObject = require('./Modals/SignUpModal');
@@ -15,25 +15,47 @@ const axios = require('axios');
 const solenolyrics = require("solenolyrics");
 const schedule = require('node-schedule');
 require('dotenv').config();
-const server = http.createServer(app);
+// const server = http.createServer(app);
+const PORT = process.env.PORT || 3001;
+const server = app.listen(PORT, () => {
+    console.log('App started at port');
+  })
+const io = socket(server, {
+    cors: {
+        origin: "http://localhost:3000",
+        methods: ["GET", "POST"],
+    },
+});
 
-const mongoUrl=process.env.MongoDB_Database_URL;
-mongoose.connect(mongoUrl);
 
-const io=new Server(server,{
-    cors:{
-        origin:"http://localhost:3000",
-        methods:['GET','POST']
-    }
-})
+const url = process.env.MongoDB_Database_Url;
+mongoose.connect(url)
+    .then(() => {
+        console.log("Connected.");
+    })
+
+    if(process.env.NODE_ENV=== 'production'){
+        app.use(express.static('client/build'));
+      
+        app.get('*', (req, res) => {
+          res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+        })
+      }
+io.sockets.on("connection", (socket) => {
+    console.log(`User Connected: ${socket.id}`);
 
 io.on('connection',(socket)=>{
     socket.on("askingQuestion",(object)=>{
+        console.log(object);
         const Model=new Question({
             Questioner:object.Questioner,
             Question:object.Question
         })
         Model.save();
+        Question.find().then((data)=>{
+            socket.emit("takeQuestions",data);
+            socket.emit("AddedAskedQuestion","Added Question Successfully.");
+        })
     });
     socket.on("getQuestions",()=>{
         Question.find().then((data)=>{
@@ -45,6 +67,8 @@ io.on('connection',(socket)=>{
             object.Answers.push(data);
             console.log(object);
             object.save();
+            let status="Added Answer successfully.";
+            socket.emit("addedAnswerStatus",status);
         });
     });
     socket.on('signUpSubmit', (object) => {
@@ -112,6 +136,7 @@ io.on('connection',(socket)=>{
     //    console.log("User Disconnected", socket.id);
     //});
 });
-server.listen(3001, () => {
-    console.log("Server Running.");
 });
+// server.listen(PORT, () => {
+//     console.log("Server Running.");
+// })
