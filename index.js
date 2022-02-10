@@ -15,6 +15,7 @@ const solenolyrics = require("solenolyrics");
 const schedule = require('node-schedule');
 require('dotenv').config();
 // const server = http.createServer(app);
+const path = require("path");
 const PORT = process.env.PORT || 3001;
 const server = app.listen(PORT, () => {
     console.log('App started at port');
