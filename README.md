@@ -35,11 +35,6 @@ https://codestack.herokuapp.com/
 - **Dhruv Kunjadiya 🦊** - dhruvkunjadiya55@gmail.com
 - **Smit Sekhadia 🦅** - smitsekhadia99@gmail.com
 
-## 👨‍🏫 Mentors
-
-- **Harsh Goel**
-- **Bhoomika**
-- **Aparna Naik**
 
 
 ## 📝 Description
